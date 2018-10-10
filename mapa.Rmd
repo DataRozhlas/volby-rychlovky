@@ -31,7 +31,7 @@ for (i in 1:nrow(nad50)) {
 
 nad50 <- cbind(nad50, results)
 
-nad50$popup <- paste0(nad50$obec, ", " , nad50$strana, " volilo ", nad50$pct, " %")
+nad50$popup <- paste0(nad50$obec, ", " , nad50$strana, " má ", nad50$pct, " % hlasů")
 
 nad50$radius <- sqrt(nad50$obyvatel/pi)
 
